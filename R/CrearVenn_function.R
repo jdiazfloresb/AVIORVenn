@@ -1,3 +1,10 @@
+#' Crea Venn Diagrams
+#'
+#' Esta funcion permite crear Diagramas de Venn de 2 a 5 variables.
+#' @param area.vector Matriz de dos columnas, y con N renglones, donde N es el total de combinaciones menos uno
+#' @keywords cats
+#' @export
+#' @examples
 
 creaVenn <- function(area.vector = 0) {
 
