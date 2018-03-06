@@ -1,13 +1,12 @@
 #' Crea Venn Diagrams
 #'
 #' Esta funcion permite crear Diagramas de Venn de 2 a 5 variables.
-#' @param combinaciones Matriz de dos columnas, y con N renglones, donde N es el total de combinaciones menos uno.
-#' @param un vector del formato c('','') donde se escribe el nombre de las categorias en orden ABCDE
+#' @param df datafrane de dos columnas, y con N renglones, donde N es el total de combinaciones menos uno.
 #' @export
 
-creaVenn <- function(combinaciones = 0) {
+creaVenn <- function(df = 0) {
 
-  areas <- combinaciones
+  areas <- df
   numRen <- nrow(areas)
 
   if (numRen == 3) {
