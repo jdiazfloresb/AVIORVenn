@@ -1,0 +1,11 @@
+Package: AVIORVenn
+Title: Diagramas de Venn
+Version: 0.0.0.9000
+Authors@R: person("Jorge", "Diaz", email = "jdiazfloresb@gmail.com", role = c("aut", "cre"))
+Description: Este paquete contiene la funcion para crear diagramas de Venn de 2 a 5 variables.
+Depends: R (>= 3.4.3)
+Imports: VennDiagram
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1

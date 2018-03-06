@@ -1,10 +1,5 @@
-#################################################################################################
-###         FUNCION PARA USAR EL LIBRARY DE VennDiagram EN UNA SOLA LINEA DE CODIGO           ###
-#################################################################################################
 
-# Crear la funcion con las variables necesarias -------------------------------------------------
-
-CrearVenn_function <- function(area.vector = 0) {
+creaVenn <- function(area.vector = 0) {
 
   areas <- area.vector
   numRen <- nrow(areas)
