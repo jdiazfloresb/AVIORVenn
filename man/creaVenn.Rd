@@ -4,10 +4,12 @@
 \alias{creaVenn}
 \title{Crea Venn Diagrams}
 \usage{
-creaVenn(area.vector = 0)
+creaVenn(combinaciones = 0, categorias = 0)
 }
 \arguments{
-\item{area.vector}{Matriz de dos columnas, y con N renglones, donde N es el total de combinaciones menos uno}
+\item{combinaciones}{Matriz de dos columnas, y con N renglones, donde N es el total de combinaciones menos uno.}
+
+\item{un}{vector del formato c('','') donde se escribe el nombre de las categorias en orden ABCDE}
 }
 \description{
 Esta funcion permite crear Diagramas de Venn de 2 a 5 variables.
