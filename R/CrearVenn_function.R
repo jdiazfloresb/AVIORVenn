@@ -6,8 +6,6 @@
 
 CrearVenn_function <- function(area.vector = 0) {
 
-  library(VennDiagram)
-
   areas <- area.vector
   numRen <- nrow(areas)
 
@@ -22,7 +20,7 @@ CrearVenn_function <- function(area.vector = 0) {
     area1 <- areas[1, 2] + cross.area
     area2 <- areas[2, 2] + cross.area
 
-    draw.pairwise.venn(area1,
+    VennDiagram::draw.pairwise.venn(area1,
                        area2,
                        cross.area,
                        category = c("Carnes Frias", "Quesos"),
@@ -53,7 +51,7 @@ CrearVenn_function <- function(area.vector = 0) {
     #     A = 1,  AB = 2, B = 3, AC = 4, ABC = 5, BC = 6, C = 7
     datos3V <- c(A, AB, B, AC, ABC, BC, C)
 
-    draw.triple.venn(direct.area = TRUE,
+    VennDiagram::draw.triple.venn(direct.area = TRUE,
                      area.vector = datos3V,
                      category = c("Carnes Frias", "Quesos", "Yoghurt"),
                      fill = c("green", "blue", "red"),
@@ -93,7 +91,7 @@ CrearVenn_function <- function(area.vector = 0) {
 
     datos4V <- c(C, CD, D, AC, ACD, ABCD, BCD, BD, A, AD, ABD, ABC, BC, B, AB)
 
-    draw.quad.venn(direct.area = TRUE,
+    VennDiagram::draw.quad.venn(direct.area = TRUE,
                    area.vector = datos4V,
                    category = c("Carnes Frias", "Quesos", "Yoghurt", "Mantequillas"),
                    fill = c("green", "blue", "red", "orange"),
@@ -160,7 +158,7 @@ CrearVenn_function <- function(area.vector = 0) {
                  CDE, ACE, ADE, ABD, ABE, BCE, ABC, ACD,
                  BCE, BDE, BCDE, ACDE, ABDE, ABCE, ABCD, ABCDE)
 
-    draw.quintuple.venn(direct.area = TRUE,
+    VennDiagram::draw.quintuple.venn(direct.area = TRUE,
                         area.vector = datos5V,
                         category = c(nomA, nomB, nomC, nomD, nomE),
                         fill = c("green", "blue", "red", "orange", "gray"),
