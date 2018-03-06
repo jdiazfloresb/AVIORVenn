@@ -62,7 +62,7 @@ creaVenn <- function(combinaciones = 0, categorias = 0) {
   
       VennDiagram::draw.triple.venn(direct.area = TRUE,
                        area.vector = datos3V,
-                       category = c("Carnes Frias", "Quesos", "Yoghurt"),
+                       category = categorias,
                        fill = c("green", "blue", "red"),
                        lty = "dashed",
                        cex = 2,
@@ -107,7 +107,7 @@ creaVenn <- function(combinaciones = 0, categorias = 0) {
   
       VennDiagram::draw.quad.venn(direct.area = TRUE,
                      area.vector = datos4V,
-                     category = c("Carnes Frias", "Quesos", "Yoghurt", "Mantequillas"),
+                     category = categorias,
                      fill = c("green", "blue", "red", "orange"),
                      lty = "dashed",
                      cex = 2,
@@ -179,7 +179,7 @@ creaVenn <- function(combinaciones = 0, categorias = 0) {
   
       VennDiagram::draw.quintuple.venn(direct.area = TRUE,
                           area.vector = datos5V,
-                          category = c(nomA, nomB, nomC, nomD, nomE),
+                          category = categorias,
                           fill = c("green", "blue", "red", "orange", "gray"),
                           lty = "dashed",
                           cex = 2,
